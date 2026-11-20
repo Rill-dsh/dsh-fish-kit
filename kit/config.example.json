@@ -1,0 +1,54 @@
+{
+  "_说明": "复制成 config.json 再填。config.json 不要提交进 git。值留空 = 这块不用。",
+
+  "onebot": {
+    "_base说明": "SnowLuma / NapCat 的地址，默认 127.0.0.1:3000",
+    "base": "http://127.0.0.1:3000",
+    "_token说明": "后端设了 access token 才填，没设就留空",
+    "token": ""
+  },
+
+  "self": {
+    "qq": 0,
+    "group": 0
+  },
+
+  "owner": {
+    "qq": 0,
+    "_说明": "你自己的 QQ 号。鱼默认只对你开口，群里要有人叫它才应。"
+  },
+
+  "paths": {
+    "_daily说明": "每日流水、seen 状态都落这儿。留空就不记。",
+    "daily": "",
+    "_stickers说明": "表情包根目录，下面按分类放 gif",
+    "stickers": "",
+    "_voice_ref说明": "声音参考 wav，语音克隆要用，10-30 秒",
+    "voice_ref": ""
+  },
+
+  "voice": {
+    "model": "mimo-v2.5-tts-voiceclone",
+    "endpoint": "https://api.xiaomimimo.com/v1",
+    "api_key": "",
+    "format": "wav"
+  },
+
+  "bili": {
+    "credential": "",
+    "watch_uid": 0,
+    "seen": "",
+    "_说明": "credential 是 B站登录凭证 json（sessdata / bili_jct / buvid3 / dedeuserid）；watch_uid 是要盯着谁的私信"
+  },
+
+  "douyin": {
+    "cookies": "",
+    "seen": "",
+    "_说明": "cookies 是抖音 web 端导出的 json，形状 {cookies:[{name,value,domain}]}"
+  },
+
+  "memory": {
+    "context_db": "",
+    "_说明": "上下文索引 sqlite 路径。空着就不查库，只靠插件记忆。"
+  }
+}

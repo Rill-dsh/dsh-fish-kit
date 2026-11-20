@@ -1,0 +1,28 @@
+# 配置和凭证：绝对不能进仓库
+config.json
+*.secret.json
+*.credential*.json
+cookie*.json
+.env
+
+# 记忆、流水、状态：全是个人的东西
+daily/
+*.db
+*.sqlite
+*-seen.json
+dy-notices.json
+*.log
+
+# 语音 / 图片素材（体积大，而且可能带隐私）
+*.wav
+*.mp3
+*.m4a
+
+# 运行时垃圾
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
