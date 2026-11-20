@@ -55,6 +55,7 @@
 | 记得 | `dsh-fish-memory`（会淡忘的长期记忆） | 独立 MIT 项目，见 `plugins/README.md` |
 | 会先开口 | `dsh-speak-up`（本地骰子，不花模型） | 同上 |
 | 对外开口 | `dsh-qq-bridge` + SnowLuma / NapCat | `docs/02` |
+| 探 B站 / 抖音 | `kit/` 里两个检查脚本 | `docs/02b` |
 | 说人话 | 人格卡 + 学说话 + AGENTS.md | `persona/` |
 | 干活 | 本仓库 `kit/` 下的脚本 | `kit/` |
 
@@ -76,6 +77,8 @@ cd kit
 cp config.example.json config.json     # 填 onebot.base / owner.qq / paths.daily
 python doctor.py                        # 一条一条看哪儿还没通
 
+# 4.5（可选）接 B站 / 抖音：填 config.json 里的 bili / douyin，见 docs/02b
+
 # 5. 让它开口
 python qq-send.py <你的QQ号> "在呢"
 ```
@@ -85,7 +88,7 @@ python qq-send.py <你的QQ号> "在呢"
 ## 目录
 
 ```
-docs/       装起来、接 QQ、给它一张脸、记忆、主动开口、踩过的坑
+docs/       装起来、接 QQ / B站 / 抖音、给它一张脸、记忆、主动开口、踩过的坑
 persona/    人格卡 / 学说话 / AGENTS.md 三份模板
 kit/        能直接跑的脚本：发消息、发图、语音、查私信、自检
 plugins/    依赖哪些插件、各自装法

@@ -63,6 +63,11 @@ dsh plugin --profile desktop add github:Yuuyuko-uu/dsh-bili-subagent
 - 版本：0.8.x
 - 需要 B 站登录凭证
 
+### 抖音
+
+不靠插件。`kit/dy-check-notice.py` 拿导出的 web cookie 直接查 @ / 评论 / 私信，
+接法和风控注意看 `docs/02b-接上B站和抖音.md`。
+
 ### 人设类插件
 
 社区里有人做了「鲸鱼娘」人设插件（覆盖系统提示词），装了可以让它出厂就带
